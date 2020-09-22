@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false,
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/babel"],
+  "plugins": ["import", "prettier"],
+  "env": {
+    "jest": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "consistent-return": 1,
+    "max-len": [2, { "code": 100 }],
+    "arrow-body-style": [2, "as-needed"],
+    "class-methods-use-this": 0,
+    "comma-dangle": [2, "always-multiline"],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "newline-per-chained-call": 0,
+    "no-confusing-arrow": 2,
+    "no-console": 1,
+    "no-unused-vars": 2,
+    "no-use-before-define": 0,
+    "no-async-promise-executor": 0,
+    "no-await-in-loop": 0,
+    "no-bitwise": 0,
+    "no-param-reassign": 0,
+    "no-plusplus": 0,
+    "no-return-assign": 1,
+    "no-return-await": 1,
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": 1,
+    "no-useless-catch": 0,
+    "no-restricted-syntax": 0,
+    "prefer-destructuring": 1,
+    "prefer-object-spread": 0,
+    "prefer-promise-reject-errors": 1,
+    "prefer-template": 1,
+    "prettier/prettier": 2,
+    "import/imports-first": 1,
+    "import/newline-after-import": 1,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "import/no-unresolved": 2,
+    "import/no-webpack-loader-syntax": 0,
+    "import/prefer-default-export": 0
+  }
+}
